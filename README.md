@@ -8,6 +8,6 @@ Aplicativo desenvolvido com a ferramento Flutter para o [artigo do Medium](http:
 Basta clonar o repositório e executar o comando Flutter Run.
 ```bash
 $ git clone https://github.com/bcolombini/brincando_com_flutter/
-$ cd brincando_flutter
+$ cd brincando_com_flutter
 $ Flutter Run
 ```
