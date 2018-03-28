@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: new Scaffold(appBar: new AppBar(title: new Text("Coin Market",style: new TextStyle(color: Colors.white))),body: new CustomListView()) 
+      home: new CustomListView()
     );
   }
 }

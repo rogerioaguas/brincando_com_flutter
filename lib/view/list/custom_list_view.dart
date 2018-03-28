@@ -24,12 +24,16 @@ class CustomListViewState extends State<CustomListView> {
 
   @override
   Widget build(BuildContext context) {
-    return new FutureBuilder(
-      future: getCoinMarketList(),
-      builder: (ctx, snapshot) {
-        if (!snapshot.hasData) return new Container();
-        return new ListViewCoinMarket(data: snapshot.data);
-      },
-    );
+    return new Scaffold(
+        appBar: new AppBar(
+            title: new Text("Coin Market",
+                style: new TextStyle(color: Colors.white))),
+        body: new FutureBuilder(
+          future: getCoinMarketList(),
+          builder: (ctx, snapshot) {
+            if (!snapshot.hasData) return new Container();
+            return new ListViewCoinMarket(data: snapshot.data);
+          },
+        ));
   }
 }
