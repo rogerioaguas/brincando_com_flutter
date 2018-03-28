@@ -9,9 +9,9 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: 'Brincando Com Flutter',
       theme: new ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.red,
       ),
-      home: new Scaffold(appBar: new AppBar(title: new Text("Coin Market")),body: new CustomListView()) 
+      home: new Scaffold(appBar: new AppBar(title: new Text("Coin Market",style: new TextStyle(color: Colors.white))),body: new CustomListView()) 
     );
   }
 }
