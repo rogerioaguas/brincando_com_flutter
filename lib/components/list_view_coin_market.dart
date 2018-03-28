@@ -1,4 +1,5 @@
 import 'package:brincando_com_flutter/view/detail/detail_view.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -22,7 +23,7 @@ class _ListViewCoinMarketState extends State<ListViewCoinMarket> {
               onTap: () {
                 Navigator.push(
                   context,
-                  new MaterialPageRoute(
+                  new CupertinoPageRoute(
                       builder: (context) => new DetailView(coin_name:coin['name'])),
                 );
               },
