@@ -1,7 +1,10 @@
 import 'package:brincando_com_flutter/view/list/custom_list_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
-void main() => runApp(new MyApp());
+void main(){
+  debugPaintSizeEnabled = true;runApp(new MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
