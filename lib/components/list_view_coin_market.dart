@@ -24,7 +24,7 @@ class _ListViewCoinMarketState extends State<ListViewCoinMarket> {
                 Navigator.push(
                   context,
                   new CupertinoPageRoute(
-                      builder: (context) => new DetailView(coin_name:coin['name'])),
+                      builder: (context) => new DetailView(coinName:coin['name'])),
                 );
               },
               subtitle: new Text("\$ ${coin['price_usd']}"),
