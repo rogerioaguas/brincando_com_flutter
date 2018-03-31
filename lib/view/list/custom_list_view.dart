@@ -5,12 +5,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
-class CustomListView extends StatefulWidget {
-  @override
-  createState() => new CustomListViewState();
-}
-
-class CustomListViewState extends State<CustomListView> {
+class CustomListView extends StatelessWidget {
   final URL_API_COIN_MARKET_CAP = "api.coinmarketcap.com";
   final PATH_COIN_MARKET_CAP = "/v1/ticker/";
 
