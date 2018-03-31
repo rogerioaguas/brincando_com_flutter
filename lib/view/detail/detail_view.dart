@@ -60,7 +60,7 @@ class DetailView extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       new Text(
-                        "#${data['rank']} - ${coinName}",
+                        "#${data['rank']} - ${data['name']}",
                         style: new TextStyle(
                             fontSize: 30.0, fontStyle: FontStyle.italic),
                       ),
